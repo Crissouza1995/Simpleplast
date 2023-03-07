@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Clase Grids-->
+<!--
+    ->html
+
+
+    ->css
+    *{
+        margin 0;
+        padding:0;
+        box-sizing; border box;
+        overflow:auto;
+        
+    }
+
+    .body{
+        
+        height:100vh;
+        width:100%;
+        display: flex;
+        flex direction:column;
+        justify content:center;
+        aling-items:center;
+    }
+    .grid{
+    display: grid;
+    grid-template-columns: 400px, auto ( la columna de ajusta al contenido) (valor del ancho de la columna), si pongo otro valor mas 
+    e asigna otra columna.
+    comandos:
+    repeat(5,1fr)
+    repeat (x es cantidad de columna, medida en fraccion(fraccion, px, %));
+    fr: medida de fraccion;
+    row-gap: 5px ; (espaciado entre las filas);
+    column-gap: 5px (espacio entre columnas);
+    gap: 5px 10px (misma manera 5px para la fila y 10px para la columna si pongo una sola medida se aplica para ambas);
+    grid-template-area: 
+
+    grid-template-rows: 50px 230 px ( valor del alto de la coumna);
+    repeat (x es cantidad de columna, medida en px);
+
+    con columns defino cantidad de columnas y con rows cantidad de filas.
+
+    grid-template-areas:"cabecera cabecera cabecera"  (ocurre siempre en el padre).
+                        "navbar navbar navbar"
+                        "seccion articulo articulo"
+                        "seccion 2 seccion 2 seccion2"
+                        "pie pie pie";
+
+    Hijos: (cabecera, navbar, seccion seccion 2, navbar).
+
+    .cabecera{
+        grid-area:cabecera;
+    }
+    .navbar{
+        grid-area: navbar;
+        (le puedo dar estilo al contenedor)
+        flex (puedo darle un flex)
+        justify-content: space-between;
+    }
+    seccion{
+     grid-area: seccion
+    }
+    .articulo{
+         grid-area:articulo;
+    }
+    .seccion2{
+         grid-area:seccion2;
+    }
+    .pie{
+         grid-area:pie;
+    }
+
+}-->
+
+<!--GRIDs II
+
+hacer responsive una pag
+
+-- Media Queries--
+
+Con este comando establecemos como nuestra pagina se va a comportar de acuerdo a las medidas en px que introduzcamos en @media
+@media (max-width: 768px){
+
+    .navbar{
+        background-color: blue;  // en este caso nuestra pagina cambia de color cuando este baja de 768px
+    }
+    .navbar ul li{
+        font-size:1.8 em;   // cambiamos tamaño de fuente 
+    }
+}
+
+
+Pseudoclases
+
+(podemos asignar una funcion a una clase especifica dentro de un conetenedor si ponemos 1 se hace en el primer elemento si pornemos 
+2 lo aplica al segundo elemento, etc)
+.clase div.box: nth-child1(1){
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+-->
+</head>
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,773 @@
+.body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 2px;
+    box-sizing: border box;
+
+}
+
+svg {
+    width: 40px;
+}
+
+
+/*Estilos menu principal*/
+.menu-grid {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(72, 72, 165);
+    list-style-type: none;
+
+}
+
+
+/*Estilo logo*/
+.simpleplast {
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 3vh;
+    color: antiquewhite;
+    list-style-type: none;
+
+}
+
+/*Estilo Menu de navegacion */
+
+.header {
+
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 100;
+
+
+}
+
+.header-menu {
+    text-decoration: none;
+    font-size: 2vh;
+    font-family: Raleway;
+    color: antiquewhite;
+    list-style-type: none;
+}
+
+/*Animacion Estilo logo*/
+
+.header-menu:hover {
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-family: Raleway;
+    color: antiquewhite;
+}
+
+.contenedor-texto {
+
+
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+
+
+
+
+/*-----------------------Estilos inicio----------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    .inicio-grid {
+
+        display: grid;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 5fr;
+        grid-template-areas:
+            "impresion-3d impresion-3d diseño diseño"
+            "title-3d title-3d title-diseño title-diseño "
+            "prototipo produccion creacion soluciones"
+            "enunciado1 enunciado2 enunciado3 enunciado4"
+            "baner baner baner baner";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        column-gap: 5px;
+        row-gap: 5px;
+        text-align: center;
+
+    }
+
+    .imagen-immpresion3d-contain {
+
+        grid-area: impresion-3d;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid rgb(72, 72, 165);
+
+    }
+
+    .imagen-diseño-desarrollo-contain {
+        grid-area: diseño;
+    }
+
+
+
+    .titulo-contenedor {
+
+        margin-top: 10%;
+        padding: 30px;
+        text-align: center;
+
+    }
+
+    .titulo-inicio {
+
+        text-decoration: none;
+        font-size: 4vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+
+    }
+
+    .imagen-diseño-desarrollo-contain {
+
+        grid-area: diseño;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid rgb(72, 72, 165);
+
+    }
+
+
+    .enunciado-imagen-impresion3d {
+
+        grid-area: title-3d;
+        padding: 40px;
+        padding-bottom: 20%;
+
+
+    }
+
+    .enunciado-diseño-desarrollo {
+
+        grid-area: title-diseño;
+        padding: 40px;
+        padding-bottom: 20%;
+
+    }
+
+    .titulo-imagenes-circulares {
+
+        text-decoration: none;
+        font-size: 3vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+
+    }
+
+
+
+    .prototipo {
+
+        grid-area: prototipo;
+        padding: 20px;
+
+
+    }
+
+    .Enunciado-prototipo {
+        grid-area: enunciado1;
+        padding: 10px;
+        display: grid;
+    }
+
+    .produccion-serie {
+        grid-area: produccion;
+        padding: 20px;
+        display: grid;
+    }
+
+    .enunciado-produccion-serie {
+        grid-area: enunciado2;
+        display: grid;
+    }
+
+    .co-creacion {
+        grid-area: creacion;
+        padding: 20px;
+        display: grid;
+    }
+
+    .enunciado-co-creacion {
+        grid-area: enunciado3;
+        padding: 20px;
+        display: grid;
+    }
+
+    .soluciones-integrales {
+        grid-area: soluciones;
+        padding: 20px;
+        display: grid;
+
+    }
+
+    .enunciado-soluciones-integrales {
+        grid-area: enunciado4;
+        padding: 20px;
+        display: grid;
+    }
+
+    .titulo-box {
+
+        text-decoration: none;
+        font-size: 3vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .texto-box {
+
+        text-decoration: none;
+        font-size: 2vh;
+        font-family: Raleway;
+        color: gray;
+        padding: 8px;
+
+    }
+
+
+    .baner-containt {
+
+        grid-area: baner;
+        position: relative;
+        padding-top: 10%;
+
+    }
+
+    .enunciado-maqueta {
+
+        height: 11vh;
+        width: 30%;
+        background-color: antiquewhite;
+        position: absolute;
+        top: 98%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+
+    .titulo-maqueta {
+
+        text-decoration: none;
+        font-size: 2vh;
+        font-family: Raleway;
+        color: gray;
+        padding: 6px;
+
+
+    }
+
+    .grid-trayectoria {
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        column-gap: 5px;
+        row-gap: 5px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        text-align: center;
+
+    }
+
+    .años-exp {
+        grid-column: 1 / 2;
+    }
+
+    .impresoras {
+
+        grid-column: 2 / 3;
+    }
+
+
+    .exp {
+
+        text-decoration: none;
+        font-size: 3vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+/*-----------------------Estilos quienes somos----------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+    .quienes-somos-principal-grid {
+
+
+        display: grid;
+        padding-top: 70px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 20vh;
+        padding-top: 10vh;
+        background-color: bisque;
+
+
+
+
+
+    }
+
+    .parrafo-1 {}
+
+    .titulo-sobre-nosotros {
+
+        grid-column: 1 / 2;
+        padding: 40px;
+        text-align: center;
+
+
+    }
+
+    .parrafo-1 {
+
+        grid-column: 2 / 3;
+        padding: 20px;
+        font-size: 2vh;
+        font-family: Raleway;
+        color: gray(72, 72, 165);
+
+
+
+    }
+
+
+    .parrafo-2 {
+
+        grid-column: 3/ 3;
+        padding: 20px;
+        font-size: 2vh;
+        font-family: Raleway;
+        color: gray(72, 72, 165);
+
+
+    }
+
+
+    .sn {
+
+        font-size: 4vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+
+    }
+
+
+
+}
+
+
+/*-------------------------Estilo contactanos---------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+    .titulo-contactanos-contain {
+
+
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .titulo-contactanos {
+
+        font-size: 3vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+        padding: 30px;
+    }
+
+
+    .titulo-formulario{
+
+        font-size: 2.5vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+
+    }
+
+    .form-contain{
+
+        padding: 40px;
+        padding-bottom: 90px;
+
+    }
+
+
+    .form-contacto {
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        
+      }
+      
+      h2 {
+        text-align: center;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      .label-form {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: rgb(72, 72, 165);
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      button[type="submit"] {
+        background-color: ccc;
+        color: rgb(72, 72, 165);
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: violet;
+      }
+
+
+
+
+}
+
+
+
+
+
+
+/*-----------------------Estilos galeria de imagenes--------------------------------------*/
+/*Estilos galeria de imagenes*/
+.titulo-galeria {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-family: Raleway;
+    color: rgb(72, 72, 165);
+}
+
+.anuncio {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 2vh;
+    font-family: Raleway;
+    color: rgb(72, 72, 165);
+}
+
+
+/* vista desktop */
+@media only screen and (min-width: 768px) {
+
+    .galery-grid {
+
+        display: grid;
+        padding-top: 70px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 15px;
+        padding-bottom: 70px;
+
+
+    }
+
+    /*Estilo galeria de imagenes*/
+
+    .contenedor-imagen {
+
+        position: relative;
+        display: inline-block;
+    }
+
+    .imagen {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+        border: 2px solid rgb(72, 72, 165);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+
+    .imagen:hover {
+        opacity: 0.7;
+        /* Reduce la opacidad de la imagen al 70% cuando se coloca el cursor sobre la imagen */
+    }
+
+    .titulo-imagen {
+
+        position: absolute;
+        text-align: center;
+        border-radius: 10%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        color: #fff;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        font-family: Raleway;
+        color: black;
+        font-size: 2.5vh;
+
+    }
+
+    .contenedor-imagen:hover .titulo-imagen {
+        opacity: 1;
+    }
+
+
+    .grid-box-beneficio {
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        column-gap: 5px;
+        row-gap: 5px;
+        text-align: center;
+        border-top: rgb(72, 72, 165) solid 2px;
+
+
+    }
+
+
+    .contenedor-icono-envio {
+        grid-column: 2 / 3;
+        /* establece el rango de columnas del primer contenedor para que abarque desde la columna 2 hasta la 4 */
+    }
+
+    .contenedor-icono-cuotas {
+        grid-column: 3 / 4;
+        /* establece el rango de columnas del segundo contenedor para que abarque desde la columna 4 hasta la 6 */
+    }
+
+    .contenedor-icono-entrega-inmediata {
+        grid-template-columns: 5/6;
+    }
+
+    .svg-entrega {
+        width: 52px;
+        height: 35px;
+    }
+
+    .titulo-promo {
+        font-size: 2vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+    }
+
+    .sub-promo {
+
+        font-size: 1.5vh;
+        font-family: Raleway;
+        color: rgb(72, 72, 165);
+
+    }
+
+
+    .pie-grid {
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "logo suscripcion suscripcion social";
+        /*se uso esta herramienta a modo de practica se entiende que es mejor haberlo resuelto con un grid de 3 columnas*/
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        column-gap: 5px;
+        row-gap: 5px;
+        text-align: center;
+        background-color: rgb(72, 72, 165);
+
+
+    }
+
+
+
+    .contenedor-logo {
+
+        grid-area: logo;
+        display: grid;
+
+
+    }
+
+    .suscripcion-newsletter {
+
+        display: inline-block;
+        grid-area: suscripcion;
+        padding: 20px;
+
+
+    }
+
+    .contenedor-formulario-suscripcion-newsletter {
+
+        padding: 20px;
+
+
+    }
+
+    .social {
+        grid-area: social;
+        padding: 20px;
+
+    }
+
+
+    .pie-grid .contenedor-logo .logo {
+
+
+        font-size: 1.5vh;
+        font-family: Raleway;
+        color: antiquewhite;
+
+    }
+
+    .pie-grid .suscripcion-newsletter .enunciado-suscripcion {
+
+        font-size: 1.5vh;
+        font-family: Raleway;
+        color: antiquewhite;
+
+    }
+
+
+    /* Estilo del placeholder */
+    .placeholderfoot::placeholder {
+        color: antiquewhite;
+    }
+
+    /* Estilo del label */
+    label {
+        display: block;
+        font-family: Raleway;
+        color: antiquewhite;
+        margin-bottom: 5px;
+    }
+
+    /* Estilo del input */
+    input[type="text"],
+    input[type="email"] {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    /* Estilo del botón de submit */
+    .mi-boton-suscripcion {
+        background-color: ccc;
+        color: rgb(72, 72, 165);
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .mi-boton-suscripcion:hover {
+        background-color: violet;
+    }
+
+    .pie-grid .social .enunciado-social {
+
+        font-size: 1.5vh;
+        font-family: Raleway;
+        color: antiquewhite;
+
+
+    }
+
+
+
+
+}
